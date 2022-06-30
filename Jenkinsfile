@@ -64,7 +64,7 @@ pipeline {
         stage('Remove local docker image') {
             steps{
                 echo "pending"
-
+                echo "test"
                 sh "docker rmi ${env.imageName}:${env.BUILD_ID}"
             }
         }
