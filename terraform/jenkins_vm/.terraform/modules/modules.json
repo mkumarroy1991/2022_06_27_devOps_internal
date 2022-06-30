@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"jenkins_vm","Source":"gcs::https://www.googleapis.com/storage/v1/roi-materials/terraform","Dir":".terraform/modules/jenkins_vm"}]}
