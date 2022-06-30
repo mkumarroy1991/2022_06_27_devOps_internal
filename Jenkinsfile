@@ -57,7 +57,7 @@ pipeline {
             steps {
                 echo 'Get cluster credentials'
                 sh 'gcloud container clusters get-credentials demo-node-app-cluster --zone us-central1-c --project roidtc-june22-u113'
-                sh "kubectl set image deployment/demo-node-internal-deployment demo-node-nternal=${env.imageName}:${env.BUILD_ID} -n demo"
+                sh "kubectl set image deployment/demo-node-internal-deployment demo-node-internal=${env.imageName}:${env.BUILD_ID} -n demo"
 
              }
         }     
